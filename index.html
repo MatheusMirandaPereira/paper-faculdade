@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="src/ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Tempo e Temperatura</title>
+</head>
+<body>
+    <div id="container"> 
+        <div id="weather">
+            <h1 class="title">Três Rios, BR</h1>
+            <div class="infos">
+                <div class="temp">
+                    <img class="temp_img" src="" alt="">
+                    <div>
+                        <p class="temp_value">
+                            5 <sup>cº</sup>
+                        </p>
+                        <p class="temp_description">
+                            Frio
+                        </p>
+                    </div>
+                </div>
+                <div id="other_infos">
+                    <div class="info">
+                        <i id="temp_max_icon" class="fa-solid fa-temperature-arrow-up"></i>
+                        <div>
+                            <h2>Temp. max</h2>
+                            <p class="temp_max">
+                                10 <sup>cº</sup>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="info">
+                        <i id="temp_min_icon" class="fa-solid fa-temperature-arrow-down"></i>
+
+                        <div>
+                            <h2>Temp. min</h2>
+
+                            <p class="temp_min">
+                                -2 <sup>cº</sup>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="alert"></div>
+    <form id="search">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="search"
+        name="city_name"
+        id="city_name"
+        placeholder="Digite uma Cidade"
+        >
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
+    <span onclick="openLogsPage()" class="history-link">Histórico de Busca</span>
+
+</div>
+
+<script>
+    function openLogsPage() {
+        window.open('logs.php', '_blank');
+    }
+</script>
+
+<script src="src/javascript/script.js"></script>
+</body>
+</html>
